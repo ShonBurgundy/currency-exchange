@@ -7,11 +7,19 @@ import { ExchangeRate } from './../src/exchange-rate.js';
 
 $(document).ready(function() {
   $("#currencyExchange").click(function() {
+    let currency = $("#currencySelector").val();
+    console.log(currency);
     let input = $("#currencyInput").val();
-    if (currency !== "") {
+    if (input !== "") {
+      console.log(input);
       (async () => {
         let exchangeRate = new ExchangeRate();
         const response = await exchangeRate.getExchangeRate(input);
+        // response.conversion_rates.currency
+      })();
+    }
+  });
+});
 
 // function displayIngredientList(ingredientArray) {
 //   let ingredientListDisplay = $("#showIngredientsList");
