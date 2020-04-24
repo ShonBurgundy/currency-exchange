@@ -18,8 +18,8 @@ export class ExchangeRate {
   }
 
   calculateRate (conversionRate, dollarAmount) {
-    let finalRate = Math.round(conversionRate * dollarAmount);
-    return finalRate;
+    let finalRate = conversionRate * dollarAmount;
+    return "You're conversion would come out to " + finalRate.toFixed(2);
   }
 };
  

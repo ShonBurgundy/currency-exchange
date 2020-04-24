@@ -30,6 +30,11 @@ body {
   margin-top: 100px;
 }
 
+#output {
+  margin: 30px;
+  text-decoration: underline;
+}
+
 .showIngredients{
   display: block;
   margin-left: auto;
