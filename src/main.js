@@ -1,9 +1,9 @@
 //UI
-import $ from 'jquery';
+// import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import {  } from './../src/exchange-rate.js';
+// import {  } from './../src/exchange-rate.js';
 
 // function displayIngredientList(ingredientArray) {
 //   let ingredientListDisplay = $("#showIngredientsList");
