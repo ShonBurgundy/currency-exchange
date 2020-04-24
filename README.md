@@ -1,19 +1,19 @@
-# _Cocktails_
+# _Currency Exchange Rate Calculator_
 
 
-#### By _**Sean VanLeeuwen and Jessica Hvozdovich**_
+#### By _**Sean VanLeeuwen**_
 
 ## Description
 
-_A webpage that takes user input and returns data requested from TheCoctailDB API. Users can find recipes by category, ingredient, and cocktail names._
+_A webpage that takes user input and returns data requested from ExchangeRate API. Program will return user input converted into currency of their choice._
 
 ## Specs
 
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
-| **User can input a drink name** | User Input:”Manhattan” | Output: “Manhattan” |
-| **User can request ingredient information** | User Input:”Manhattan - Ingredients” | Output: “Whiskey, Vermouth, Bitters, Garnish-Cherry” |
-| **User can request a random drink** | User Input:”Surprise me!” | Output: “Margarita: Tequilla, triple sec, lime juice, salt” |
+| **Program will take user number input for currency** | User Input:”10” | Output: “$10” |
+| **Program will prompt user choice for currency conversion** | User Input:” $2 USD” | Output: “$1.85 Euros” |
+| **Program will give error message for bad user input** | User Input:”Five Dollars” | Output: “Please, enter numbers to see exchange rate” |
 
 
 ## Setup/Installation Requirements
@@ -21,7 +21,7 @@ _A webpage that takes user input and returns data requested from TheCoctailDB AP
 1. Clone this repository from GitHub.
 2. Open the downloaded directory in a text editor of your choice.
   (VSCode, Atom, etc.)
-3. Go to https://www.thecocktaildb.com/faq.php and read the instructions for acquiring an API Key
+3. Go to https://www.exchangerate-api.com/ and read the instructions for acquiring an API Key
 4. Create a .env folder in the main directory of your download with your api key listed as API_KEY = /your api key here/ as a line in .env
 5. Run npm install in your terminal to download the necessary dependencies, plugins, and modules.
 6. The command npm run start will build and open the compiled code in a browser of your choice using a local host.
@@ -31,8 +31,6 @@ _A webpage that takes user input and returns data requested from TheCoctailDB AP
 Gifs will not currently load but are being referenced 4/23/2020
 
 ## Support and contact details
-
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/jhvozdovich/drink-recipes/issues) here on GitHub._
 
 _Sean VanLeeuwen's email:_
 __seanbeloussow@yahoo.com
@@ -52,5 +50,5 @@ __seanbeloussow@yahoo.com
 
 **The MIT license**
 
-Copyright (c) 2020 Sean VanLeeuwen and Jessica Hvozdovich
+Copyright (c) 2020 Sean VanLeeuwen
 This software is licensed under MIT license.

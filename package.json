@@ -1,7 +1,7 @@
 {
-  "name": "cocktails",
+  "name": "exchange-rate",
   "version": "1.0.0",
-  "description": "",
+  "description": "currency exchange calculator",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -10,9 +10,9 @@
     "test": "jest"
   },
   "keywords": [
-    "cocktails",
-    "drink recipes",
-    "alcohol"
+    "currency",
+    "exchange",
+    "rate"
   ],
   "author": "Sean VanLeeuwen",
   "license": "ISC",
