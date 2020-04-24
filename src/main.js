@@ -5,6 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { ExchangeRate } from './../src/exchange-rate.js';
 
+$(document).ready(function() {
+  $("#currencyExchange").click(function() {
+    let input = $("#currencyInput").val();
+    if (currency !== "") {
+      (async () => {
+        let exchangeRate = new ExchangeRate();
+        const response = await exchangeRate.getExchangeRate(input);
+
 // function displayIngredientList(ingredientArray) {
 //   let ingredientListDisplay = $("#showIngredientsList");
 //   let htmlForIngredients = "";

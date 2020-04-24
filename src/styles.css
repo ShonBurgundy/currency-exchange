@@ -21,12 +21,13 @@ body {
 }
 
 .jumbotron {
-  background-image: linear-gradient(to top, #df0211, #e35102, #e57808, #e59a24, #e5b844, #e7bc48, #e8c14b, #eac54f, #eeb135, #f39b1c, #f78305, #fb6600);
+  /* background-image: linear-gradient(to top, #df0211, #e35102, #e57808, #e59a24, #e5b844, #e7bc48, #e8c14b, #eac54f, #eeb135, #f39b1c, #f78305, #fb6600); */
   border-style: groove;
   border-color: black;
   font-family: Chalkduster, fantasy;
   text-align: center;
   margin: 25px;
+  margin-top: 100px;
 }
 
 .showIngredients{
@@ -38,19 +39,19 @@ body {
 }
 
 #top, #bottom, #left, #right {
-	background-image: url(https://bit.ly/2KqnVX0);
+	background-image: url(https://bit.ly/2Kz0Kd3);
   position: fixed;
 	}
 	#left, #right {
 		top: 0; bottom: 0;
-		width: 20px;
+		width: 25px;
 		}
 		#left { left: 0; }
 		#right { right: 0; }
 		
 	#top, #bottom {
 		left: 0; right: 0;
-		height: 20px;
+		height: 25px;
 		}
 		#top { top: 0; }
 		#bottom { bottom: 0; }

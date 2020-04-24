@@ -6,33 +6,47 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Currency Exchange Rate Calculator</h1>
-    </div>
-    <h2></h2>
-    <label for="currencyInput">Enter USD Currency</label>
-    <input id="currencyInput" type="text">
-    <button class="btn btn-info" id="currencyExchange">Submit</button>
-    <hr> 
-    <label for="cocktailInput">Enter currency you would like to convert to</label>
-    <input id="cocktailInput" type="text">
-    <button class="btn btn-info" id="cocktailSearch">Submit</button>
-    <hr>
-    <button class="btn btn-info" id="randomSearch">Surprise Me!</button>
-    <hr>
-    <div class="showIngredients">
-      <ul id="showDrinksList">
-      </ul>
-      <ul id="showIngredientsList">
-      </ul>
-      <p id="showErrors"></p>
-    </div>
-    <div id="showGif"></div>
+      <h1>Currency Exchanger</h1>
+    
+      <p class="lead">This is a currency exchange rate calculator.</p>
+      <hr class="my-4">
+    <!-- USD currency entry will go below -->
+      <div class="form-group">
+        <label for="currencyInput">Enter USD Currency</label>
+        <input id="currencyInput" type="number">
+      </div>
+      <hr class="my-4">
+      <!-- Currency Selector will go below-->
+      <div class="form-group">
+        <label for="currencySelector">Choose currency you would like to convert to?</label>
+        <select class="form-control" id="currencySelector">
+          <option>Choose...</option>
+          <option>United Arab Emirates Dirham</option>
+          <option>Argentine Peso</option>
+          <option>Australian Dollar</option>
+          <option>Bulgarian Lev</option>
+          <option>Brazilian Real</option>
+        </select>
+      </div>
 
-    <div id="left"></div>
-    <div id="right"></div>
-    <div id="top"></div>
-    <div id="bottom"></div>
+      <button class="btn btn-info" id="currencyExchange">Submit</button>
 
+      <div class="showIngredients">
+        <ul id="showDrinksList">
+        </ul>
+        <ul id="showIngredientsList">
+        </ul>
+        <p id="showErrors"></p>
+      </div>
+      <div id="showGif"></div>
+
+      
+
+      <div id="left"></div>
+      <div id="right"></div>
+      <div id="top"></div>
+      <div id="bottom"></div>
+    </div>
   </div>
 </body>
 </html>
