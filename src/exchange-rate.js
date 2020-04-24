@@ -17,6 +17,11 @@ export class ExchangeRate {
     }
   }
 }
+ 
+calculateRate (currency, dollarAmount) {
+  let finalRate = currency * dollarAmount;
+  return finalRate;
+}
 
 //   getIngredientsFromDrink (drinkArray) {
 //     let ingredients = [];

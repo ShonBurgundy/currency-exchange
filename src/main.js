@@ -9,13 +9,16 @@ $(document).ready(function() {
   $("#currencyExchange").click(function() {
     let currency = $("#currencySelector").val();
     console.log(currency);
-    let input = $("#currencyInput").val();
-    if (input !== "") {
-      console.log(input);
+    let dollarAmount = $("#currencyInput").val();
+    if (dollarAmount !== "") {
+      console.log(dollarAmount);
       (async () => {
         let exchangeRate = new ExchangeRate();
-        const response = await exchangeRate.getExchangeRate(input);
-        // response.conversion_rates.currency
+        const response = await exchangeRate.getExchangeRate(dollarAmount);
+        let conversionRate = response.conversion_rates[currency];
+        const calculated = exchangeRate.calculateRate(currency, dollarAmount)
+        console.log(response.conversion_rates[currency]);
+        $("#output").text(calculated);
       })();
     }
   });
