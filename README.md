@@ -18,17 +18,23 @@ _A webpage that takes user input and returns data requested from ExchangeRate AP
 
 ## Setup/Installation Requirements
 
-1. Clone this repository from GitHub.
-2. Open the downloaded directory in a text editor of your choice.
-  (VSCode, Atom, etc.)
-3. Go to https://www.exchangerate-api.com/ and read the instructions for acquiring an API Key
-4. Create a .env folder in the main directory of your download with your api key listed as API_KEY = /your api key here/ as a line in .env
-5. Run npm install in your terminal to download the necessary dependencies, plugins, and modules.
-6. The command npm run start will build and open the compiled code in a browser of your choice using a local host.
+1. In the terminal, type 'git clone https://github.com/ShonBurgundy/currency-exchange'.
+1. Enter the directory, with 'cd currency' 
+1. Open the downloaded directory in a text editor of your choice.
+  (VSCode, Atom, etc.) 
+1. Go to https://www.exchangerate-api.com/ and read the instructions for acquiring an API Key
+1. Create a .env folder in the main directory of your download with your api key listed as API_KEY = /your api key here/ as a line in .env
+1. Add .env to .gitignore
+1. Run npm install in your terminal to download the necessary dependencies, plugins, and modules.
+1. The command npm run start will build and open the compiled code in a browser of your choice using a local host.
+
+## Live Site
+
+https://mystifying-kowalevski-5456cb.netlify.app/
 
 ## Known Bugs
 
-
+No known bugs
 
 ## Support and contact details
 
