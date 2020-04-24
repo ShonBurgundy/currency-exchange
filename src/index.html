@@ -8,18 +8,34 @@
     <div class="jumbotron">
       <h1>Currency Exchanger</h1>
       <p class="lead">This is a currency exchange rate calculator.</p>
+
+      <hr class="my-4">
+      <div class="form-group">
+        <label for="currencyFrom">Choose currency you would like to convert from?</label>
+        <select class="form-control" id="currencyFrom">
+          <option value="null">Choose...</option>
+          <option value="USD">United States Dollar</option>
+          <option value="AED">United Arab Emirates Dirham</option>
+          <option value="ARS">Argentine Peso</option>
+          <option value="AUD">Australian Dollar</option>
+          <option value="BGN">Bulgarian Lev</option>
+          <option value="BRL">Brazilian Real</option>
+        </select>
+      </div>
       <hr class="my-4">
     <!-- USD currency entry will go below -->
       <div class="form-group">
-        <label for="currencyInput">Enter USD Currency</label>
+        <label for="currencyInput">Enter Amount:</label>
         <input id="currencyInput" type="number">
       </div>
       <hr class="my-4">
+
       <!-- Currency Selector will go below-->
       <div class="form-group">
-        <label for="currencySelector">Choose currency you would like to convert to?</label>
-        <select class="form-control" id="currencySelector">
-          <option>Choose...</option>
+        <label for="currencyTo">Choose currency you would like to convert to?</label>
+        <select class="form-control" id="currencyTo">
+          <option value="null">Choose...</option>
+          <option value="USD">United States Dollar</option>
           <option value="AED">United Arab Emirates Dirham</option>
           <option value="ARS">Argentine Peso</option>
           <option value="AUD">Australian Dollar</option>
