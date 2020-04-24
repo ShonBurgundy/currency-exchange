@@ -14,10 +14,14 @@ $(document).ready(function() {
       console.log(dollarAmount);
       (async () => {
         let exchangeRate = new ExchangeRate();
-        const response = await exchangeRate.getExchangeRate(dollarAmount);
+        const response = await exchangeRate.getExchangeRate();
+        if (response.error || response.status !== 200) {
+          alert 
+        }
         let conversionRate = response.conversion_rates[currency];
         const calculated = exchangeRate.calculateRate(conversionRate, dollarAmount);
-        $("#output").text(calculated);
+        $("#output").text(calculated + " " + currency);
+
       })();
     }
   });

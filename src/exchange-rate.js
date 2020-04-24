@@ -2,9 +2,9 @@
 
 export class ExchangeRate {
   
-  async getExchangeRate(input) {
+  async getExchangeRate() {
     try {
-      let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
+      let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/FFF`);
       let jsonifiedResponse;
       if (response.ok && response.status === 200) {
         jsonifiedResponse = await response.json();
@@ -21,7 +21,7 @@ export class ExchangeRate {
     let finalRate = conversionRate * dollarAmount;
     return "You're conversion would come out to " + finalRate.toFixed(2);
   }
-};
+}
  
 
 
