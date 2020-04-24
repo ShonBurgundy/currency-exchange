@@ -16,12 +16,14 @@ export class ExchangeRate {
       return false;
     }
   }
-}
+
+  calculateRate (conversionRate, dollarAmount) {
+    let finalRate = Math.round(conversionRate * dollarAmount);
+    return finalRate;
+  }
+};
  
-calculateRate (currency, dollarAmount) {
-  let finalRate = currency * dollarAmount;
-  return finalRate;
-}
+
 
 //   getIngredientsFromDrink (drinkArray) {
 //     let ingredients = [];

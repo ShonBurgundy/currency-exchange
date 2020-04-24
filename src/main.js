@@ -16,8 +16,7 @@ $(document).ready(function() {
         let exchangeRate = new ExchangeRate();
         const response = await exchangeRate.getExchangeRate(dollarAmount);
         let conversionRate = response.conversion_rates[currency];
-        const calculated = exchangeRate.calculateRate(currency, dollarAmount)
-        console.log(response.conversion_rates[currency]);
+        const calculated = exchangeRate.calculateRate(conversionRate, dollarAmount);
         $("#output").text(calculated);
       })();
     }
